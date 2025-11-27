@@ -8,9 +8,9 @@ self.addEventListener('install', (event) => {
             return cache.addAll([
                 './',
                 './index.html',
-                './css/style.css',   // Lowercase css
-                './js/script.js',    // Lowercase js
-                // './images/AI-genrate.jpg' // Keep commented out if you want to be safe
+                './CSS/style.css',   // Changed to Uppercase to match GitHub
+                './JS/script.js',    // Changed to Uppercase to match GitHub
+                // './images/AI-genrate.jpg'
             ]);
         })
     );
@@ -22,7 +22,7 @@ self.addEventListener('activate', (event) => {
         caches.keys().then((keys) => {
             return Promise.all(
                 keys.filter(key => key !== 'static-v1')
-                .map(key => caches.delete(key))
+                    .map(key => caches.delete(key))
             );
         })
     );
