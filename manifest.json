@@ -2,7 +2,7 @@
     "name": "AI Image Generator",
     "short_name": "AI Gen",
     "description": "An app to generate images using AI",
-    "start_url": "./index.html",
+    "start_url": "/",
     "scope": "./",
     "display": "standalone",
     "background_color": "#ffffff",
