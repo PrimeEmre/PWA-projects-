@@ -18,7 +18,7 @@ if ('serviceWorker' in navigator) {
       console.log("Servis worker registerd ")
     })
     .catch(function(err){
-      console.log("service worker not registerd")
+      console.log("service worker not registerd",err)
     })
   })
 }
