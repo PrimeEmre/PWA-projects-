@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Image Generator</title>
 
-  <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="./site.webmanifest">
+    
     <link rel="stylesheet" href="CSS/style.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
@@ -28,6 +29,12 @@
         <img id="result-image" src="images/AI-genrate.jpg" alt="Result">
     </div>
 
-    <script src="JS/script.js"></script>
+    <script src="js/script.js"></script>
+    
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./serviceWorker.js');
+      }
+    </script>
 </body>
 </html>
